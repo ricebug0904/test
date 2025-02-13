@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>義守大學營養系學會</title>
+    <style>
+        body { font-family: "Microsoft JhengHei", Arial, sans-serif; text-align: center; margin: 0; padding: 0; background: #FFF7E6; }
+        header { background: #FFCC80; padding: 20px 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        header nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        header nav a { padding: 10px 15px; text-decoration: none; color: #333; font-weight: bold; border-radius: 8px; background: #FFE0B2; transition: 0.3s; }
+        header nav a:hover { background: #FFB74D; }
+        section { padding: 120px 20px 80px; }
+        h2 { font-size: 26px; color: #D35400; }
+        p { font-size: 18px; line-height: 1.6; color: #444; }
+        .qr-code { width: 150px; margin-top: 10px; }
+        .logo { width: 100px; margin-top: 20px; }
+        footer { background: #FFD54F; padding: 20px; font-size: 16px; }
+        .slideshow-container { position: relative; max-width: 600px; margin: auto; }
+        .slideshow-container img { width: 100%; display: none; }
+        .active { display: block; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#overview">系學會概況</a>
+            <a href="#structure">組織架構</a>
+            <a href="#members">會員專欄</a>
+            <a href="#environment">社團環境</a>
+            <a href="#rules">組織章程</a>
+            <a href="#others">其他社團</a>
+        </nav>
+    </header>
+    
+    <section id="overview">
+        <h2>系學會概況</h2>
+        <p>一.成立時間：2007年</p>
+        <p>二.宗旨：
+            維持本系師生間情感的聯繫及培養同學團隊互助的精神，並促進與其他大專院校相關系學會之交流</p>
+        <p>三.主要活動</p>
+        <div class="slideshow-container">
+            <img src="S__4538401_0" class="active" alt="制服趴">
+            <img src="activity2.jpg" alt="活動 2">
+            <img src="activity3.jpg" alt="活動 3">
+        </div>
+    </section>
+    
+    <section id="structure">
+        <h2>組織架構</h2>
+        <p>這裡放置學會的組織架構內容。</p>
+    </section>
+    
+    <section id="members">
+        <h2>會員專欄</h2>
+        <p>這裡放置會員相關資訊。</p>
+    </section>
+    
+    <section id="environment">
+        <h2>社團環境</h2>
+        <p>這裡放置社團環境的描述。</p>
+    </section>
+    
+    <section id="rules">
+        <h2>組織章程</h2>
+        <p>這裡提供下載連結。</p>
+    </section>
+    
+    <section id="others">
+        <h2>其他社團</h2>
+        <p>這裡放置其他社團的外部連結。</p>
+    </section>
+    
+    <section>
+        <h2>追蹤我們</h2>
+        <p>掃描 QR Code 來關注我們的 Instagram</p>
+        <img src="qrcode.png" alt="IG QR Code" class="qr-code">
+    </section>
+    
+    <footer>
+        <p>義守大學營養系學會</p>
+        <img src="logo.png" alt="系徽" class="logo">
+    </footer>
+    
+    <script>
+        let index = 0;
+        function showSlides() {
+            let slides = document.querySelectorAll(".slideshow-container img");
+            slides.forEach(slide => slide.classList.remove("active"));
+            index = (index + 1) % slides.length;
+            slides[index].classList.add("active");
+        }
+        setInterval(showSlides, 1000);
+    </script>
+</body>
+</html>

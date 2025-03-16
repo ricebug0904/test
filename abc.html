@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>義守大學營養系學會</title>
+    <style>
+        body { font-family: "Microsoft JhengHei", Arial, sans-serif; text-align: center; margin: 0; padding: 0; background: #FFF7E6; }
+        header { background: #FFCC80; padding: 20px 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        header nav { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+        header nav a { padding: 15px 20px; text-decoration: none; color: #333; font-weight: bold; border-radius: 10px; background: #FFE0B2; transition: 0.3s; font-size: 24px; }
+        header nav a:hover { background: #FFB74D; }
+        section { padding: 150px 20px 100px; max-width: 900px; margin: auto; text-align: left; }
+        h2 { font-size: 30px; color: #D35400; margin-bottom: 20px; text-align: center; }
+        p { font-size: 25px; line-height: 1.8; color: #444; text-align: justify; }
+        .qr-code { width: 130px; margin-top: 10px; }
+        .logo { width: 130px; margin-top: 20px; }
+        footer { background: #FFD54F; padding: 10px 30px; font-size: 16px; }
+        footer p {
+    text-align: center;
+    font-size: 30px; /* 可調整大小 */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+        .slideshow-container { position: relative; max-width: 600px; margin: auto; overflow: hidden; border-radius: 10px; }
+        .slide { display: none; position: relative; }
+        .slide img { width: 100%; border-radius: 10px; }
+        .slide.active { display: block; animation: fade 1s ease-in-out; }
+        @keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .slideshow-container .prev, .slideshow-container .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+        }
+        .slideshow-container .prev { left: 10px; }
+        .slideshow-container .next { right: 10px; }
+        .caption { text-align: center; font-size: 20px; margin-top: 10px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#overview">系學會概況</a>
+            <a href="#structure">組織架構</a>
+            <a href="#members">會員專欄</a>
+            <a href="#rules">組織章程</a>
+            <a href="#others">其他社團</a>
+        </nav>
+    </header>
+    
+    <section id="overview">
+        <h2>系學會概況</h2>
+        <p><strong>成立時間：</strong> 2007年</p>
+        <p><strong>宗旨：</strong> 維持本系師生情感聯繫，培養團隊精神，促進與其他大專院校交流。</p>
+        <div class="slideshow-container">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="slide active">
+                <img src="https://raw.githubusercontent.com/ricebug0904/test/main/111-1%E7%B3%BB%E5%AD%B8%E6%9C%83%E6%9C%9F%E4%B8%AD%E5%88%B6%E6%9C%8D%E8%B6%B4.jpg" alt="111-1 期中制服趴">
+                <p class="caption">111-1 期中制服趴</p>
+            </div>
+            <div class="slide">
+                <img src="https://raw.githubusercontent.com/ricebug0904/test/main/112-2%E7%B1%83%E7%90%83%E9%86%AB%E5%AD%B8%E9%99%A2%E7%9B%83.jpg" alt="112-2 籃球醫學院盃">
+                <p class="caption">112-2 籃球醫學院盃</p>
+            </div>
+            <div class="slide">
+                <img src="https://raw.githubusercontent.com/ricebug0904/test/main/112-2%E7%B3%BB%E5%AD%B8%E6%9C%83%E6%9C%9F%E6%9C%AB%E7%83%A4%E8%82%89%E8%B6%B4%F0%9F%8D%96.jpg" alt="112-2 期末烤肉趴">
+                <p class="caption">112-2 期末烤肉趴</p>
+            </div>
+            <div class="slide">
+                <img src="https://raw.githubusercontent.com/ricebug0904/test/main/111-1%E7%B3%BB%E5%AD%B8%E6%9C%83%E6%9C%9F%E5%88%9D%E8%BF%8E%E6%96%B0%E5%AE%BF%E7%87%9F.jpg" alt="111-1 迎新宿營">
+                <p class="caption">111-1 迎新宿營</p>
+            </div>
+            <div class="slide">
+                <img src="https://raw.githubusercontent.com/ricebug0904/test/main/112-1%E7%B3%BB%E5%AD%B8%E6%9C%83%E6%9C%9F%E5%88%9D%E8%BF%8E%E6%96%B0%E5%AE%BF%E7%87%9F.jpg" alt="112-1 迎新宿營">
+                <p class="caption">112-1 迎新宿營</p>
+            </div>
+        </div>  
+    </section>
+    
+    <section id="structure">
+        <h2>組織架構</h2>
+        <img src="https://raw.githubusercontent.com/ricebug0904/test/main/%E5%B9%B9%E9%83%A8%E4%BB%8B%E7%B4%B9.jpg" alt="組織架構" style="width: 100%; max-width: 900px;">
+    </section>
+    
+    <section id="members">
+        <h2>會員專欄</h2>
+        <p>✔️ 參加系學會活動可豐富大學生活 🎉</p>
+        <p>✔️ 當系會幹部可累積經驗，為職場加分 💼</p>
+        <p>✔️ 參加活動享特殊優待 🎟️</p>
+        <p>✔️ 購買系周邊商品有會員優惠 🛍️</p>
+    </section>
+    
+    <section id="rules">
+        <h2>組織章程</h2>
+        <a href="系學會組織章程.pdf" download>下載組織章程 PDF</a>
+    </section>
+    
+    <section id="others">
+        <h2>其他社團</h2>
+        <a href="https://sa1.isu.edu.tw/page/%E7%A4%BE%E5%9C%98%E5%B0%88%E5%8D%80-fL5FvxJATpOs" target="_blank">點擊這裡前往義守大學社團專區</a>
+    </section>
+    
+    <footer>
+        <p>快來追蹤我們!</p>
+        <img src="https://raw.githubusercontent.com/ricebug0904/test/main/vu4cjo.jpg" alt="系徽" class="logo">
+        <img src="https://raw.githubusercontent.com/ricebug0904/test/1d607edc0faa118a330308017cc3c86321c907c1/QRcode.jpg" alt="IG QR Code" class="qr-code">
+    </footer>
+    
+    <script>
+        let slideIndex = 0;
+        function showSlides() {
+            let slides = document.querySelectorAll(".slide");
+            slides.forEach(slide => slide.classList.remove("active"));
+            slideIndex = (slideIndex + 1) % slides.length;
+            slides[slideIndex].classList.add("active");
+        }
+        function changeSlide(n) {
+            let slides = document.querySelectorAll(".slide");
+            slides.forEach(slide => slide.classList.remove("active"));
+            slideIndex = (slideIndex + n + slides.length) % slides.length;
+            slides[slideIndex].classList.add("active");
+        }
+        setInterval(showSlides, 3000);
+    </script>
+</body>
+</html>
